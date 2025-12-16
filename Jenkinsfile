@@ -2,11 +2,6 @@ pipeline {
   agent any
 
   stages {
-    stage('Checkout') {
-      steps {
-        git 'https://github.com/Kiaraintellipaat/demoT.git'
-      }
-    }
 
     stage('Terraform Init') {
       steps {
@@ -27,4 +22,3 @@ pipeline {
     }
   }
 }
-
