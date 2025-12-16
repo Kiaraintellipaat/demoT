@@ -2,7 +2,7 @@ terraform {
   backend "s3" {
     bucket         = "terraform-prod-state-bucket-682919447108"  # ← Correct bucket name
     key            = "infra/terraform.tfstate"
-    region         = "eu-central-1"  # ← Change from us-east-1 to eu-central-1
+    region         = "us-east-1"  # ← Change from us-east-1 to eu-central-1
     encrypt        = true
     dynamodb_table = "terraform-lock"  # Optional: for state locking
   }
