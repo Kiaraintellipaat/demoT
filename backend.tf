@@ -4,6 +4,6 @@ terraform {
     key            = "infra/terraform.tfstate"
     region         = "us-east-1"  # ← Change from us-east-1 to eu-central-1
     encrypt        = true
-    dynamodb_table = "terraform-lock"  # Optional: for state locking
+    #dynamodb_table = "terraform-lock"  # Optional: for state locking
   }
 }
