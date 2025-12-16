@@ -4,7 +4,7 @@ pipeline {
   stages {
     stage('Checkout') {
       steps {
-        git ''
+        git 'https://github.com/Kiaraintellipaat/demoT.git'
       }
     }
 
@@ -27,3 +27,4 @@ pipeline {
     }
   }
 }
+
